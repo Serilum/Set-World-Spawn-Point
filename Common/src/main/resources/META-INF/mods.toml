@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="*"
+license="All rights reserved"
+issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Set%20World%20Spawn%20Point"
+logoFile="icon.png"
+
+[[mods]]
+modId="setworldspawnpoint"
+version="3.3"
+displayName="Set World Spawn Point"
+displayURL="https://serilum.com/mod/set-world-spawn-point"
+authors="Rick South"
+description='''Allows setting an exact custom spawn point for newly created worlds.
+'''
+credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
+
+Alister, Andrean Olgo, aternosorg, BirdieMiner, Cherriesaurus, Jack, Jeremy Langford, Michael W. S., pepe1191, Shana Gitnick, Tyler Behl   
+
+If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
+'''
+
+[[dependencies.setworldspawnpoint]]
+    modId="collective"
+    mandatory=true
+    versionRange="[7.54,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.setworldspawnpoint]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.6]"
+    ordering="NONE"
+    side="BOTH"
