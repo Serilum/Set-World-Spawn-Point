@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "setworldspawnpoint",
-  "version": "3.3",
+  "version": "3.4",
 
   "name": "Set World Spawn Point",
   "description": "Allows setting an exact custom spawn point for newly created worlds.",
@@ -23,7 +23,7 @@
     "fabric": "*",
     "minecraft": ">=1.21",
     "java": ">=21",
-    "collective": ">=7.61"
+    "collective": ">=7.78"
   },
 
   "custom": {
@@ -44,11 +44,9 @@
 	  " Alister",
 	  " Andrean Olgo",
 	  " aternosorg",
-	  " BirdieMiner",
 	  " Cherriesaurus",
-	  " Jeremy Langford",
 	  " Michael W. S.",
-	  " Rare Students",
+	  " Nahuel Fernandez",
 	  " Shana Gitnick",
 	  " Tyler Behl"
   ]
