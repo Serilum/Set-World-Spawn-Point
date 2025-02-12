@@ -11,12 +11,10 @@ import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent.PlayerRespawnEvent;
 import net.minecraftforge.event.level.LevelEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
-@EventBusSubscriber
 public class ForgeWorldSpawnEvent {
 	@SubscribeEvent
-	public void onWorldLoad(LevelEvent.CreateSpawnPosition e) {
+	public static void onWorldLoad(LevelEvent.CreateSpawnPosition e) {
 		Level level = WorldFunctions.getWorldIfInstanceOfAndNotRemote(e.getLevel());
 		if (level == null) {
 			return;
@@ -28,7 +26,7 @@ public class ForgeWorldSpawnEvent {
 	}
 	
 	@SubscribeEvent
-	public void onPlayerRespawn(PlayerRespawnEvent e) {
+	public static void onPlayerRespawn(PlayerRespawnEvent e) {
 		Player player = e.getEntity();
 		if (player.level().isClientSide) {
 			return;
@@ -38,7 +36,7 @@ public class ForgeWorldSpawnEvent {
 	}
 	
 	@SubscribeEvent
-	public void onEntityJoin(EntityJoinLevelEvent e) {
+	public static void onEntityJoin(EntityJoinLevelEvent e) {
 		WorldSpawnEvent.onEntityJoin(e.getLevel(), e.getEntity());
 	}
 }
