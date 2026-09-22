@@ -1,5 +1,5 @@
 <h2>Set World Spawn Point</h2>
-<p><a href="https://github.com/Serilum/Set-World-Spawn-Point"><img src="https://serilum.com/assets/images/logo/set-world-spawn-point.png"></a></p><h2>Download</h2>
+<p><a href="https://github.com/Serilum/Set-World-Spawn-Point"><img src="https://workflow.serilum.com/web/logo/128/set-world-spawn-point.png" width="100" height="100"></a></p><h2>Download</h2>
 <p>You can download Set World Spawn Point on CurseForge and Modrinth:</p><p>&nbsp;&nbsp;CurseForge: &nbsp;&nbsp;<a href="https://curseforge.com/minecraft/mc-mods/set-world-spawn-point">https://curseforge.com/minecraft/mc-mods/set-world-spawn-point</a><br>&nbsp;&nbsp;Modrinth: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://modrinth.com/mod/set-world-spawn-point">https://modrinth.com/mod/set-world-spawn-point</a></p>
 <h2>Issue Tracker</h2>
 <p>To keep a better overview of all mods, the issue tracker is located in a separate repository.<br>&nbsp;&nbsp;For issues, ideas, suggestions or anything else, please follow this link:</p>
