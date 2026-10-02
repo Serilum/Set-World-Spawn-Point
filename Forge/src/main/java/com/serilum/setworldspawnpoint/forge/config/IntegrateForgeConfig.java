@@ -1,7 +1,7 @@
-package com.natamus.setworldspawnpoint.forge.config;
+package com.serilum.setworldspawnpoint.forge.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.setworldspawnpoint.util.Reference;
+import com.serilum.setworldspawnpoint.util.Reference;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 

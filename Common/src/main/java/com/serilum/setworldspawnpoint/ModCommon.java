@@ -1,6 +1,6 @@
-package com.natamus.setworldspawnpoint;
+package com.serilum.setworldspawnpoint;
 
-import com.natamus.setworldspawnpoint.config.ConfigHandler;
+import com.serilum.setworldspawnpoint.config.ConfigHandler;
 
 public class ModCommon {
 
