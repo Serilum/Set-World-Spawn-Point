@@ -1,10 +1,10 @@
-package com.natamus.setworldspawnpoint.events;
+package com.serilum.setworldspawnpoint.events;
 
 import com.natamus.collective.functions.BlockPosFunctions;
 import com.natamus.collective.functions.PlayerFunctions;
 import com.natamus.collective.services.Services;
-import com.natamus.setworldspawnpoint.config.ConfigHandler;
-import com.natamus.setworldspawnpoint.util.Reference;
+import com.serilum.setworldspawnpoint.config.ConfigHandler;
+import com.serilum.setworldspawnpoint.util.Reference;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;

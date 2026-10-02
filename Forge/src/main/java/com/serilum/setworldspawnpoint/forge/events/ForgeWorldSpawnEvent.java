@@ -1,7 +1,7 @@
-package com.natamus.setworldspawnpoint.forge.events;
+package com.serilum.setworldspawnpoint.forge.events;
 
 import com.natamus.collective.functions.WorldFunctions;
-import com.natamus.setworldspawnpoint.events.WorldSpawnEvent;
+import com.serilum.setworldspawnpoint.events.WorldSpawnEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
