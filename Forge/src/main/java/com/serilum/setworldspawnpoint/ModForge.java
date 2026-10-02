@@ -1,10 +1,10 @@
-package com.natamus.setworldspawnpoint;
+package com.serilum.setworldspawnpoint;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.setworldspawnpoint.forge.config.IntegrateForgeConfig;
-import com.natamus.setworldspawnpoint.forge.events.ForgeWorldSpawnEvent;
-import com.natamus.setworldspawnpoint.util.Reference;
+import com.serilum.setworldspawnpoint.forge.config.IntegrateForgeConfig;
+import com.serilum.setworldspawnpoint.forge.events.ForgeWorldSpawnEvent;
+import com.serilum.setworldspawnpoint.util.Reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -32,7 +32,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	MinecraftForge.EVENT_BUS.register(ForgeWorldSpawnEvent.class);
+		MinecraftForge.EVENT_BUS.register(ForgeWorldSpawnEvent.class);
 	}
 
 	private static void setGlobalConstants() {
