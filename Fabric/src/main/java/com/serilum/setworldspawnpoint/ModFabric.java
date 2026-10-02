@@ -1,10 +1,10 @@
-package com.natamus.setworldspawnpoint;
+package com.serilum.setworldspawnpoint;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.collective.fabric.callbacks.CollectiveMinecraftServerEvents;
-import com.natamus.setworldspawnpoint.events.WorldSpawnEvent;
-import com.natamus.setworldspawnpoint.util.Reference;
+import com.serilum.setworldspawnpoint.events.WorldSpawnEvent;
+import com.serilum.setworldspawnpoint.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
