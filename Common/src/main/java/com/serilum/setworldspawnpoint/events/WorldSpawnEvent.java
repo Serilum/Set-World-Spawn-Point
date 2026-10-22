@@ -52,7 +52,7 @@ public class WorldSpawnEvent {
 			RespawnData respawnData = serverLevel.getRespawnData();
 
 			BlockPos respawnlocation = respawnData.pos(); // get spawn point
-			Vec3 respawnvec = new Vec3(respawnlocation.getX(), respawnlocation.getY(), respawnlocation.getZ());
+			Vec3 respawnvec = Vec3.atBottomCenterOf(respawnlocation);
 
 			ServerPlayer.RespawnConfig respawnConfig = player.getRespawnConfig();
 			if (respawnConfig != null) {
@@ -111,7 +111,8 @@ public class WorldSpawnEvent {
 		BlockPos cpos = new BlockPos(ppos.getX(), wspos.getY(), ppos.getZ());
 		
 		if (cpos.closerThan(wspos, 50)) {
-			player.teleportTo(wspos.getX(), wspos.getY(), wspos.getZ());
+			Vec3 spawnvec = Vec3.atBottomCenterOf(wspos);
+			player.teleportTo(spawnvec.x, spawnvec.y, spawnvec.z);
 		}
 	}
 }
