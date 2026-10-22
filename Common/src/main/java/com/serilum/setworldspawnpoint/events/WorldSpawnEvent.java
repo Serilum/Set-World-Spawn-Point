@@ -49,10 +49,11 @@ public class WorldSpawnEvent {
 		
 		if (ConfigHandler._forceExactSpawn) {
 			ServerLevel serverworld = (ServerLevel)world;
-			
+
 			BlockPos respawnlocation = serverworld.getSharedSpawnPos(); // get spawn point
-			Vec3 respawnvec = new Vec3(respawnlocation.getX(), respawnlocation.getY(), respawnlocation.getZ());
-			
+			Vec3 respawnvec = Vec3.atBottomCenterOf(respawnlocation);
+			float respawnYaw = serverworld.getSharedSpawnAngle();
+
 			BlockPos bedpos = player.getRespawnPosition();
 			if (bedpos != null) {
 				DimensionTransition optionalbed = player.findRespawnPositionAndUseSpawnBlock(true, DimensionTransition.DO_NOTHING);
@@ -74,10 +75,11 @@ public class WorldSpawnEvent {
 					}
 
 					respawnvec = new Vec3(bedlocation.x(), bedlocation.y(), bedlocation.z());
+					respawnYaw = player.getYRot();
 				}
 			}
-			
-			player.teleportTo(respawnvec.x, respawnvec.y, respawnvec.z);
+
+			player.teleportTo(serverworld, respawnvec.x, respawnvec.y, respawnvec.z, respawnYaw, player.getXRot());
 		}
 	}
 	
@@ -106,7 +108,8 @@ public class WorldSpawnEvent {
 		BlockPos cpos = new BlockPos(ppos.getX(), wspos.getY(), ppos.getZ());
 		
 		if (cpos.closerThan(wspos, 50)) {
-			player.teleportTo(wspos.getX(), wspos.getY(), wspos.getZ());
+			Vec3 spawnvec = Vec3.atBottomCenterOf(wspos);
+			((ServerPlayer)player).teleportTo(serverworld, spawnvec.x, spawnvec.y, spawnvec.z, serverworld.getSharedSpawnAngle(), player.getXRot());
 		}
 	}
 }
