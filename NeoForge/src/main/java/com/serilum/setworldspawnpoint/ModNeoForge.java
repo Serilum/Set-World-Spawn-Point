@@ -1,10 +1,10 @@
-package com.natamus.setworldspawnpoint;
+package com.serilum.setworldspawnpoint;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.setworldspawnpoint.neoforge.config.IntegrateNeoForgeConfig;
-import com.natamus.setworldspawnpoint.neoforge.events.NeoForgeWorldSpawnEvent;
-import com.natamus.setworldspawnpoint.util.Reference;
+import com.serilum.setworldspawnpoint.neoforge.config.IntegrateNeoForgeConfig;
+import com.serilum.setworldspawnpoint.neoforge.events.NeoForgeWorldSpawnEvent;
+import com.serilum.setworldspawnpoint.util.Reference;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModLoadingContext;
