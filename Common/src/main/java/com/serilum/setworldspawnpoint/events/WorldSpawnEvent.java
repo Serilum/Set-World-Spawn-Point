@@ -2,9 +2,9 @@ package com.serilum.setworldspawnpoint.events;
 
 import com.natamus.collective.functions.BlockPosFunctions;
 import com.natamus.collective.functions.PlayerFunctions;
-import com.natamus.collective.services.Services;
 import com.serilum.setworldspawnpoint.config.ConfigHandler;
 import com.serilum.setworldspawnpoint.util.Reference;
+import com.serilum.setworldspawnpoint.util.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -24,7 +24,7 @@ import java.util.Iterator;
 
 public class WorldSpawnEvent {
 	public static boolean onWorldLoad(ServerLevel serverLevel, ServerLevelData serverLevelData) {
-		if (Services.MODLOADER.isModLoaded("villagespawnpoint") || Services.MODLOADER.isModLoaded("biomespawnpoint")) {
+		if (Util.isOtherSpawnPointModEnabled()) {
 			return false;
 		}
 
